@@ -1,0 +1,95 @@
+.subButtons{
+    width: 100%;
+    height: max-content;
+    background-color: rgb(15, 10, 37);
+   padding-left: 29px;
+   padding-top: 20px;
+   padding-bottom: 25px;
+}
+
+.companyDetails{
+    width: 100%;
+    height: max-content;
+    background-color: rgb(15, 10, 37);
+    padding: 8%;
+}
+
+.row{
+    margin-top: 2%;
+}
+.note{
+    color: rgb(203, 222, 239);
+    font-weight: bold;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.box{
+    padding: 10px 30px;
+    color:rgb(15, 10, 37);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    display: inline-block;
+    margin-right: 38px;
+    text-align: center;
+    font-weight: bold;
+    width: 22%;
+    cursor: pointer;
+}
+.companyBOX{
+    padding: 10px 20px;
+    background-color: rgb(162, 178, 224);
+    color:rgb(15, 10, 37);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+}
+h2 {
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(203, 222, 239);
+  margin-top: 15px;
+
+}
+
+table tr{
+    color: rgb(179, 230, 213);
+}
+
+.Buttons{
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+}
+.SubmitBtn{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 5px 40px;
+    background-color:cornflowerblue;
+    border-radius:15px 0 15px 0 ;
+    border: 15px solid rgb(3, 3, 30);
+    float: right;
+    font-size: 18px;
+}
+.Resettbtn{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 5px 45px;
+    background-color:cornflowerblue;
+    border-radius:0 15px 0 15px;
+    border: 15px solid rgb(3, 3, 30);
+    float: right;
+    margin-right: 20px;
+    font-size: 18px;
+}
+.Score{
+    float: left;
+    color: rgb(144, 183, 218);
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}

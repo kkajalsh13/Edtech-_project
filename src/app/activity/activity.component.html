@@ -1,0 +1,109 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sd-12">
+            <div class="subButtons">
+                <p class="note">* Select an option for the following Company Data</p>
+                <div class="box" id="{{k}}" [style.backgroundColor]="colors[k]" [style.border]="this.id == k? '2px solid white':''" (click)="select1($event)" *ngFor="let i of company; let k = index">
+                    <span  id="{{k}}">{{i}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row g-0">
+        <div class="col-lg-3 col-md-3 col-sd-12"  *ngFor="let j of Alpha; let l = index">
+            <div class="companyDetails">
+                <div id="{{Alpha[l]}}" class="companyBOX" (click)="select2($event)">
+                    <span id="{{Alpha[l]}}">Company {{j}}</span>
+                </div>
+                <h2>Profitability</h2>
+                <table style="width: 100%;">
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Gross Profit Margin
+                        </td>
+                        <td>{{Values[l][0]}}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            EBIT Margin
+                        </td>
+                        <td>{{Values[l][1]}}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Net Income Margin
+                        </td>
+                        <td>{{Values[l][2]}}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Return on Equity
+                        </td>
+                        <td>{{Values[l][3]}}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Return on Assets
+                        </td>
+                        <td>{{Values[l][4]}}</td>
+                    </tr>
+                </table>
+                <h2>Valuation</h2>
+                <table style="width: 100%;">
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            P/E Non-GAAP (FWD)
+                        </td>
+                        <td>{{Values[l][5]}}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            P/E GAAP (TTM)
+                        </td>
+                        <td>{{Values[l][6]}}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Price/Book (TTM)
+                        </td>
+                        <td>{{Values[l][7]}}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            EV/Sales (TTM)
+                        </td>
+                        <td>{{Values[l][8]}}</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            EV/EBITDA (TTM)
+                        </td>
+                        <td>{{Values[l][9]}}</td>
+                        
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sd-12" >
+            <div class="Buttons">
+                <span class="Score" *ngIf="score_part">Score -  {{score}}/ 4</span>
+                <button class="SubmitBtn" (click)="submit()">Submit</button>
+                <button class="Resettbtn" (click)="reset()">Reset</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
